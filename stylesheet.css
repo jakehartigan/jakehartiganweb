@@ -185,19 +185,18 @@ p1 {
     flex-direction: column;
     align-items: center;
     justify-content: left;
-    background-color: rgba(0, 174, 255, 0.226);
+
     
 }
 
 .about_title {
-    background-color: blueviolet;
     margin-top: 25%;
     display: flex;
     width: 100%;
 }
 
 .about_p {
-    background-color: brown;
+  padding-top: 10px;
 }
 
 /*skills section*/
@@ -216,7 +215,7 @@ p1 {
 }
 
 .skillset {
-    background-color: rgba(0, 255, 255, 0.253);
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -236,6 +235,7 @@ p1 {
     padding: 0 10%;
     margin-left: 18%;
     margin-right: 18%;
+    font-weight: 500;
 }
 
 .resume_button {
@@ -267,7 +267,8 @@ p1 {
     flex-direction: column;
     margin-left: 18%;
     margin-right: 18%;
-    background-color: rgba(0, 225, 255, 0.247);
+    margin-top: 5%;
+
 }
 
 .process_cardLeft, .process_cardRight {
