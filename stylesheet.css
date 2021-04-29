@@ -314,13 +314,19 @@ h6 {
 /* Work Section */
 /* Shows the case studies of past works with a brief description and a link to learn more */
 
+.work_header {
+    margin-left: 18%;
+    margin-top: 15%;
+}
 .work {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 18% 0;
+    margin: 5% 0;
 }
-
+.work h2 {
+    justify-items: flex-start;
+}
 .mobile_img {
     display: none;
 }
