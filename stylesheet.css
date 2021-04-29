@@ -115,25 +115,28 @@ h6 {
 .hero{
     display: flex;
     justify-content: space-between;
+    width: 82%;
     margin-left: 18%;
     margin-right: 18%;
-    padding: 30px 0px;
+    padding-top: 30px;
 }
+
 .hero_text {
     padding-top: 30px;
     font-size: 16pt;
 }
 
 
-p1 {
+.p1 {
     font-size: 14pt;
     font-weight: 300;
 }
 
 .hero_image{
     padding-top: 10%;
-    margin-right:25%;
+    margin-right:33%;
 }
+
 .background_logo {
     display: flex;
     justify-content: center;
@@ -171,7 +174,7 @@ p1 {
    justify-content: space-around;
     margin-left: 14%;
     margin-right: 18%;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 .about_container {
@@ -201,6 +204,14 @@ p1 {
 
 /*skills section*/
 
+.skills_title {
+    margin-left: 18%;
+    margin-right: auto;
+    margin-bottom: 5%;
+    margin-top: 15%;
+    font-size: 40pt;
+}
+
 .skill_icons {
     display: flex;
     flex-direction: column;
@@ -221,17 +232,22 @@ p1 {
     justify-content: space-evenly;
      margin-left: 25%;
      margin-right: 18%;
-     height: 900px;
+     height: 875px;
 }
 
 .skill {
-    padding: 30px;
+    display: flex;
+    flex-direction:column;
+}
+.skill h3{
+    font-size: 24pt;
 }
 
 .resume_download {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-style: italic;
     padding: 0 10%;
     margin-left: 18%;
     margin-right: 18%;
@@ -268,6 +284,15 @@ p1 {
     margin-left: 18%;
     margin-right: 18%;
     margin-top: 5%;
+}
+
+.process_titleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom:30px;
 
 }
 
@@ -294,6 +319,10 @@ p1 {
     flex-direction: column;
     align-items: center;
     margin: 18% 0;
+}
+
+.mobile_img {
+    display: none;
 }
 .work_casestudy {
     font-size: 36pt;
@@ -361,6 +390,7 @@ footer {
 }
 
 @media  screen and (max-width: 960px) {
+
     .navbar_container {
         display: flex;
         justify-content: space-between;
@@ -456,36 +486,44 @@ footer {
     .about {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-left: 10%;
         margin-right: 10%;
-        background-color: rgba(153, 50, 204, 0.555);
+    
+    }
+    .profile_img {
+        margin-bottom: 0pt;
     }
     
     .about_container {
         font-size: 30px;
-        background-color: darksalmon;
+  
+ 
     }
     
     .about_card{
         display: flex;
         justify-content: space-between;
-        background-color: rgba(0, 174, 255, 0.226);
         
     }
     
     .about_title {
-        background-color: blueviolet;
+        margin-top: 5%;
         width: 100%;
     }
     
     .about_p {
-        background-color: brown;
         padding-top: 20px;
+        margin-bottom: 15%;
     }
 
     /*mobile skills section*/
-
+    .skills_title {
+        margin-left: 10%;
+        margin-right: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 40pt;
+    }
     .skill_icons {
         display: flex;
         flex-direction: column;
@@ -500,7 +538,6 @@ footer {
     }
     
     .skillset {
-        background-color: rgba(0, 255, 255, 0.253);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -536,14 +573,57 @@ footer {
         display: flex;
         justify-content: space-around;
     }
+    /* mobile Process Section */
+
     .process {
     display: flex;
     flex-direction: column;
     margin-left: 18%;
     margin-right: 18%;
-    background-color: rgba(0, 225, 255, 0.247);
-}
+    margin-top: 15%;
 
+    }
+
+    /* mobile work section */
+    .work_img {
+        display: flex;
+        justify-content: left;
+        height: auto;
+        overflow: hidden;
+    }
+    .responsive_img {
+        height: auto;
+        padding-right: 80%;
+
+    }
+    .work {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .desktop_img{
+        display: none;
+    }
+    .mobile_img {
+        display: flex;
+    }
+    .work_card {
+        text-align: center;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .feedback {
+        text-align: center;
+    }
+    .feedback_form {
+        width: 25%;
+    }
+ 
+}
 .process_cardLeft, .process_cardRight {
     background-color: rgba(169, 169, 169, 0.24);
     width: 50%;
@@ -559,4 +639,3 @@ footer {
     align-self: flex-end;
 }
 
-}
