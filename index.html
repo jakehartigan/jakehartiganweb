@@ -37,13 +37,15 @@
     
     <!-- Hero Space Section -->
     <div class="hero"> 
+        <div class="hero_text">
         <h1>DESIGN<br>WITH<br>DEPTH</h1>
-        <p1>Get to know Jake and <br>
-            his approach to design.
-            </p1>
+        <h2>Jake <br>Hartigan</h2>
+        <p1>Ux / Ui Designer</p1>
+        </div>
+        <div class="hero_image"> <div class="background_logo"><img src="images/Group 398.svg" alt="Jake Hartigan Logo"></div></div>
+    
     </div>
     <button id="connect_button">CONNECT</button>
-        <div class="background_logo"><img src="images/Group 398.svg" alt="Jake Hartigan Logo"></div>
 
     <!-- ABOUT Section-->
     <section class="about">
@@ -58,12 +60,12 @@
 
         <!-- Skills Section-->
         <aside class="skill_icons">
-             <img src="images/favicon2.png" class="skill_icon">
-             <img src="images/favicon2.png" class="skill_icon">
-             <img src="images/favicon2.png" class="skill_icon">
-             <img src="images/favicon2.png" class="skill_icon">
-             <img src="images/favicon2.png" class="skill_icon">
-             <img src="images/favicon2.png" class="skill_icon">
+             <img src="images/pointer2.png" class="skill_icon">
+             <img src="images/eye2.png" class="skill_icon">
+             <img src="images/desktop2.png" class="skill_icon">
+             <img src="images/coding2.png" class="skill_icon">
+             <img src="images/person2.png" class="skill_icon">
+             <img src="images/thumbsUp2.png" class="skill_icon">
         </aside>
         <section class="skillset">
             <div class="skill">
@@ -89,10 +91,11 @@
             <div class="skill"><h2>COLLABORATION</h2>
                 <p1> Management, Active Listening, Socratic Questioning, Networking, Presentation/ Pitching, Lean Startup, Scrum/ Sprints </p1>
             </div>
-            <div class="resume_download">
-                <div class="resume">If you prefer the old fashion resume. Below is a a one page document that meets your traditional needs.</div>
-             </div>
+           
         </section>
+        <div class="resume_download">
+            <div class="resume">If you prefer the old fashion resume. Below is a a one page document that meets your traditional needs.</div>
+         </div>
         <div class="resume_button">
              <button id="download_button">DOWNLOAD</button>
          </div>
@@ -102,19 +105,40 @@
     <!-- Process Section-->
     <section class="process">
         <h2>PROCESS MAKES PERFECT</h2>
-        <div class="prcess_cardLeft">Step 1</div>
-        <div class="prcess_cardRight">Step 2</div>
-        <div class="prcess_cardLeft">Step 3</div>
-        <div class="prcess_cardRight">Step 4</div>
-        <div class="prcess_cardLeft">Step 5</div>
-        <div class="prcess_cardRight">Step 6</div>
+        <p1>Design bridges that gap between art and science. <br> " I employ various sub processes and techniques that have been tested by time other designers and myself."</p1>
+        <div class="process_cardLeft">Step 1</div>
+        <div class="process_cardRight">Step 2</div>
+        <div class="process_cardLeft">Step 3</div>
+        <div class="process_cardRight">Step 4</div>
+        <div class="process_cardLeft">Step 5</div>
+        <div class="process_cardRight">Step 6</div>
     </section>
 
     <!-- Work Section -->
+    <!-- shows case studies that I've worked on-->
     <section class="work">
-        <div class="work_casestudy">Premier Family Foods</div>
+        <h1>WORK</h1>
         <div class="work_casestudy">ICCF</div>
+                <img src="images/iPhone-HiFi-homepage02@2x.png">
+            <div class="work_card">
+                <p1 class="work_p">A non-profit's old website was losing new members. <br> Read how the team created a new design while keeping the heart of the old website alive.</p1>
+            </div>
+                <button id="learnMore_ICCF">LEARN MORE</button>
+
+        <div class="work_casestudy">Premier Family</div>
+            <img src="images/premierFamilyFoods.png">
+            <div class="work_card">
+                <p1 class="work_p">An old website was losing new members. <br> Read how the team brought the new website design while keeping the heart of the old website.</p1>
+            </div>
+                  <button id="learnMore_premier">LEARN MORE</button>
+
         <div class="work_casestudy">Department of Education</div>
+            <img src="images/deptEdu.png">
+        <div class="work_card">
+            <p1 class="work_p">An old website was losing new members. <br> Read how the team brought the new website design while keeping the heart of the old website.</p1>
+        </div>
+            <button id="learnMore_deptEdu">LEARN MORE</button>
+
     </section>
 
     <!--Footer Section-->
@@ -122,26 +146,33 @@
         <div class="footer_container">
 
             <div class="footer_about">
-                <h2>ABOUT</h2>
+                <h3>ABOUT</h3>
+                <p class="footer_subpage"></p>
+            </div>
+        
+
+            <div class="footer_about">
+                <h3>PROCESS</h3>
                 <p class="footer_subpage"></p>
             </div>
 
             <div class="footer_about">
-                <h2>PROCESS</h2>
+                <h3>WORK</h3>
                 <p class="footer_subpage"></p>
             </div>
 
             <div class="footer_about">
-                <h2>WORK</h2>
-                <p class="footer_subpage"></p>
-            </div>
-
-            <div class="footer_about">
-                <h2>CONTACT</h2>
+                <h3>CONTACT</h3>
                 <p class="footer_subpage"></p>
             </div>
 
         </div>
+
+        <div class="feedback">
+            <p1>Did I not have what you were looking for? <br> Please let me know how I can improve this site to help users like you.</p1>
+            <input class="feedback_form">
+        </div>
+
     </footer>
         
         <script src="app.js"></script>

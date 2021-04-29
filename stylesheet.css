@@ -14,14 +14,7 @@ body{
 
 }
 
-.background_logo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    z-index: -3;
-}
+
 
 /* Desktop Navbar  */
 .navbar {
@@ -121,15 +114,13 @@ h6 {
 
 .hero{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(137, 43, 226, 0.39);
+    justify-content: space-between;
     margin-left: 18%;
     margin-right: 18%;
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
-.hero p1 {
-    padding-top: 40px;
+.hero_text {
+    padding-top: 30px;
     font-size: 16pt;
 }
 
@@ -137,6 +128,18 @@ h6 {
 p1 {
     font-size: 14pt;
     font-weight: 300;
+}
+
+.hero_image{
+    padding-top: 10%;
+    margin-right:25%;
+}
+.background_logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 
 }
 
@@ -166,7 +169,7 @@ p1 {
 .about {
     display: flex;
    justify-content: space-around;
-    margin-left: 18%;
+    margin-left: 14%;
     margin-right: 18%;
     padding-top: 20%;
 }
@@ -205,11 +208,11 @@ p1 {
     height: 850px;
     width: 100px;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 18%;
     justify-content: space-evenly;
 }
 .skill_icon {
-    /* only needed for changing the icons and their containing space*/
+   margin: 10px;
 }
 
 .skillset {
@@ -217,7 +220,7 @@ p1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-     margin-left: 18%;
+     margin-left: 25%;
      margin-right: 18%;
      height: 900px;
 }
@@ -239,6 +242,7 @@ p1 {
     display: flex;
     justify-content: space-around;
 }
+
 #download_button {
     padding: 5px 40px;
     background-color: rgba(0, 0, 139, 0);
@@ -266,7 +270,94 @@ p1 {
     background-color: rgba(0, 225, 255, 0.247);
 }
 
+.process_cardLeft, .process_cardRight {
+    background-color: rgba(169, 169, 169, 0.24);
+    width: 50%;
+    min-width: 400px;
+    height: 300px;
+    padding: 30px 20px;
+    margin: 10px;
+    border-radius: 30pt;
 
+}
+
+.process_cardRight{
+    align-self: flex-end;
+}
+
+/* Work Section */
+/* Shows the case studies of past works with a brief description and a link to learn more */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18% 0;
+}
+.work_casestudy {
+    font-size: 36pt;
+    margin-top: 5%;
+
+}
+.work_card {
+    display: flex;
+    align-items: center;
+}
+
+.work_p {
+padding-bottom: 5%;
+text-align: center;
+
+}
+
+#learnMore_deptEdu , #learnMore_premier, #learnMore_ICCF {
+    padding: 5px 40px;
+    background-color: rgba(0, 0, 139, 0);
+    border-width: 2px;
+    border-color: #00fff2;
+    color:#00fff2;
+    box-shadow: 0px 0px 10px #00fff2;
+    margin: 10px;
+}
+
+#learnMore_deptEdu:hover{
+    background-color: #00FFF4;
+    color: #171132;
+    transition: all 0.3s ease-out;
+    font-weight: bold;
+}
+#learnMore_premier:hover{
+    background-color: #00FFF4;
+    color: #171132;
+    transition: all 0.3s ease-out;
+    font-weight: bold;
+}
+#learnMore_ICCF:hover{
+    background-color: #00FFF4;
+    color: #171132;
+    transition: all 0.3s ease-out;
+    font-weight: bold;
+}
+
+
+/* Footer section*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171132;
+
+}
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin-right: 10%;
+}
+
+.footer_about {
+    margin:2%;
+}
 
 @media  screen and (max-width: 960px) {
     .navbar_container {
@@ -359,4 +450,112 @@ p1 {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
+
+    /*mobile About section*/
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: rgba(153, 50, 204, 0.555);
+    }
+    
+    .about_container {
+        font-size: 30px;
+        background-color: darksalmon;
+    }
+    
+    .about_card{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 174, 255, 0.226);
+        
+    }
+    
+    .about_title {
+        background-color: blueviolet;
+        width: 100%;
+    }
+    
+    .about_p {
+        background-color: brown;
+        padding-top: 20px;
+    }
+
+    /*mobile skills section*/
+
+    .skill_icons {
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        width: 100px;
+        position: absolute;
+        margin-left: 10%;
+        justify-content: space-evenly;
+    }
+    .skill_icon {
+       margin: 10px;
+    }
+    
+    .skillset {
+        background-color: rgba(0, 255, 255, 0.253);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+         margin-left: 25%;
+         margin-right: 10%;
+         height: 1000px;
+    }
+    
+    .skill {
+        padding: 30px;
+    }
+    
+    .resume_download {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10%;
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    .resume_download {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    
+    .resume_button {
+        display: flex;
+        justify-content: space-around;
+    }
+    .process {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(0, 225, 255, 0.247);
+}
+
+.process_cardLeft, .process_cardRight {
+    background-color: rgba(169, 169, 169, 0.24);
+    width: 50%;
+    min-width: 400px;
+    height: 300px;
+    padding: 30px 20px;
+    margin: 10px;
+    border-radius: 30pt;
+
+}
+
+.process_cardRight{
+    align-self: flex-end;
+}
+
 }
